@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="E2E" time="67.728" tests="2" failures="0" errors="0">
+   <testsuite name="E2E" tests="2" failures="0" errors="0" time="67.728" skipped="0" timestamp="2025-08-24T07:53:53.445Z" hostname="mac-096467 - mac-096467" id="Test Suites/MOBILE_APP/E2E">
+      <properties>
+         <property name="deviceName" value="emulator-5554 (sdk_gphone64_arm64 - Android 16)"/>
+         <property name="devicePlatform" value="Android"/>
+         <property name="logFolder" value="/Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351"/>
+         <property name="logFiles" value="/Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/execution0.log, /Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/console0.log, /Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/appium_error.log, /Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/appium.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="mac-096467 - mac-096467"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;ready&quot;:true,&quot;message&quot;:&quot;The server is ready to accept new connections&quot;,&quot;build&quot;:{&quot;version&quot;:&quot;3.0.1&quot;,&quot;git-sha&quot;:&quot;7878c73b8562eb369f9da66d4c55b89ff6397182&quot;,&quot;built&quot;:&quot;2025-08-22 12:47:27 +0000&quot;}}}"/>
+         <property name="katalonVersion" value="10.2.4.0"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="3.0.1"/>
+         <property name="userFullName" value="Robby"/>
+         <property name="deviceId" value="emulator-5554"/>
+         <property name="deviceName" value="emulator-5554 (sdk_gphone64_arm64 - Android 16)"/>
+         <property name="deviceOSVersion" value="16"/>
+         <property name="deviceModel" value="sdk_gphone64_arm64"/>
+         <property name="hostAddress" value="192.168.1.2"/>
+         <property name="projectName" value="AutomationMobile"/>
+         <property name="deviceManufacturer" value="Google"/>
+      </properties>
+      <testcase name="Test Cases/MOBILE_APP/REGISTER" time="34.577" classname="Test Cases/MOBILE_APP/REGISTER" status="PASSED">
+         <system-out><![CDATA[24-08-2025T14:53:53 - [TEST_CASE][PASSED] - Test Cases/MOBILE_APP/REGISTER: Test Cases/MOBILE_APP/REGISTER
+
+24-08-2025T14:53:53 - [TEST_STEP][PASSED] - PHONE_NUMBER = utils.generator.generatePhoneNumber(): utils.generator.generatePhoneNumber is PASSED
+
+24-08-2025T14:53:53 - [MESSAGE][PASSED] - utils.generator.generatePhoneNumber is PASSED
+
+24-08-2025T14:53:53 - [TEST_STEP][PASSED] - RANDOM_EMAIL = utils.generator.generateEmail("qamail.com"): utils.generator.generateEmail is PASSED
+
+24-08-2025T14:53:54 - [MESSAGE][PASSED] - utils.generator.generateEmail is PASSED
+
+24-08-2025T14:53:54 - [TEST_STEP][PASSED] - logInfo("Generated email: " + RANDOM_EMAIL): Generated email: user1756022033985450@qamail.com
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - Generated email: user1756022033985450@qamail.com
+
+24-08-2025T14:53:54 - [TEST_STEP][PASSED] - RANDOM_EMAIL_REGISTER = RANDOM_EMAIL: null
+
+24-08-2025T14:53:54 - [TEST_STEP][PASSED] - ANDROID_APP = getProjectDir() + ANDROID_APK: null
+
+24-08-2025T14:53:54 - [TEST_STEP][PASSED] - startApplication(ANDROID_APP, true): Started application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - Starting application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - Detected NodeJS location: "/Users/mac-096467/.nvm/versions/node/v20.19.0/bin/node"
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - PATH: /Users/mac-096467/.nvm/versions/node/v20.19.0/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Katalon Studio Enterprise.app/Contents/Eclipse/jre/Contents/Home/bin:/usr/local/bin/
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - APPIUM_HOME: /Users/mac-096467/.appium
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - appium outlog: /Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/appium.log
+
+24-08-2025T14:53:54 - [MESSAGE][INFO] - appium errlog: /Users/mac-096467/work/robby/AutomationMobile/Reports/20250824_145351/MOBILE_APP/E2E/20250824_145351/appium_error.log
+
+24-08-2025T14:53:56 - [MESSAGE][INFO] - Appium server started on port 54,460
+
+24-08-2025T14:54:06 - [MESSAGE][PASSED] - Started application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:54:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:09 - [TEST_STEP][PASSED] - btnSelanjutnya = findTestObject("Object Repository/ONBOARDING/android.widget.Button"): null
+
+24-08-2025T14:54:09 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Delayed 2 second(s)
+
+24-08-2025T14:54:09 - [TEST_STEP][PASSED] - tap(btnSelanjutnya, 0): Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:09 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:11 - [TEST_STEP][PASSED] - tap(btnSelanjutnya, 0): Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:12 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:14 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/ONBOARDING/BUTTON_MASUK"), 0): Tapped on element 'Object Repository/ONBOARDING/BUTTON_MASUK'
+
+24-08-2025T14:54:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:18 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/BUTTON_MASUK'
+
+24-08-2025T14:54:18 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/HOMEPAGE/android.widget.ImageViewProfile"), 0): Tapped on element 'Object Repository/HOMEPAGE/android.widget.ImageViewProfile'
+
+24-08-2025T14:54:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/HOMEPAGE/android.widget.ImageViewProfile'
+
+24-08-2025T14:54:19 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/ONBOARDING/LINK_DAFTAR"), 0): Tapped on element 'Object Repository/ONBOARDING/LINK_DAFTAR'
+
+24-08-2025T14:54:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:19 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/LINK_DAFTAR'
+
+24-08-2025T14:54:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/REGISTER_PAGE/android.widget.EditTextEmail"), RANDOM_EMAIL, 0): Text 'user1756022033985450@qamail.com' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextEmail'
+
+24-08-2025T14:54:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:21 - [MESSAGE][PASSED] - Text 'user1756022033985450@qamail.com' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextEmail'
+
+24-08-2025T14:54:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/REGISTER_PAGE/android.widget.EditTextNamaKTP"), generator.getRandomName(), 0): Text 'Tono' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextNamaKTP'
+
+24-08-2025T14:54:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:23 - [MESSAGE][PASSED] - Text 'Tono' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextNamaKTP'
+
+24-08-2025T14:54:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/REGISTER_PAGE/android.widget.EditTextNoHp"), PHONE_NUMBER, 0): Text '803372341173' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextNoHp'
+
+24-08-2025T14:54:23 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:24 - [MESSAGE][PASSED] - Text '803372341173' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextNoHp'
+
+24-08-2025T14:54:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/REGISTER_PAGE/android.widget.EditTextCreataPassword"), "Indones1@", 0): Text 'Indones1@' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextCreataPassword'
+
+24-08-2025T14:54:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:25 - [MESSAGE][PASSED] - Text 'Indones1@' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextCreataPassword'
+
+24-08-2025T14:54:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/REGISTER_PAGE/android.widget.EditTextUlangiPassword"), "Indones1@", 0): Text 'Indones1@' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextUlangiPassword'
+
+24-08-2025T14:54:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:26 - [MESSAGE][PASSED] - Text 'Indones1@' has been set to element 'Object Repository/REGISTER_PAGE/android.widget.EditTextUlangiPassword'
+
+24-08-2025T14:54:26 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/REGISTER_PAGE/android.view.ViewButtonDaftar"), 0): Tapped on element 'Object Repository/REGISTER_PAGE/android.view.ViewButtonDaftar'
+
+24-08-2025T14:54:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:28 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/REGISTER_PAGE/android.view.ViewButtonDaftar']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/MOBILE_APP/LOGIN" time="32.834" classname="Test Cases/MOBILE_APP/LOGIN" status="PASSED">
+         <system-out><![CDATA[24-08-2025T14:54:28 - [TEST_CASE][PASSED] - Test Cases/MOBILE_APP/LOGIN: Test Cases/MOBILE_APP/LOGIN
+
+24-08-2025T14:54:28 - [TEST_STEP][PASSED] - ANDROID_APP = getProjectDir() + ANDROID_APK: null
+
+24-08-2025T14:54:28 - [TEST_STEP][PASSED] - startApplication(ANDROID_APP, true): Started application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:54:28 - [MESSAGE][INFO] - Starting application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:54:41 - [MESSAGE][PASSED] - Started application: '/Users/mac-096467/work/robby/AutomationMobile/APP/gvm-staging-waf.apk'
+
+24-08-2025T14:54:41 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:43 - [TEST_STEP][PASSED] - btnSelanjutnya = findTestObject("Object Repository/ONBOARDING/android.widget.Button"): null
+
+24-08-2025T14:54:43 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Delayed 2 second(s)
+
+24-08-2025T14:54:43 - [TEST_STEP][PASSED] - tap(btnSelanjutnya, 0): Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:45 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:45 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:47 - [TEST_STEP][PASSED] - tap(btnSelanjutnya, 0): Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:48 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/android.widget.Button'
+
+24-08-2025T14:54:48 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+24-08-2025T14:54:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+24-08-2025T14:54:50 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/ONBOARDING/BUTTON_MASUK"), 0): Tapped on element 'Object Repository/ONBOARDING/BUTTON_MASUK'
+
+24-08-2025T14:54:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:53 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/ONBOARDING/BUTTON_MASUK'
+
+24-08-2025T14:54:53 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/HOMEPAGE/android.widget.ImageViewProfile"), 0): Tapped on element 'Object Repository/HOMEPAGE/android.widget.ImageViewProfile'
+
+24-08-2025T14:54:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:54 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/HOMEPAGE/android.widget.ImageViewProfile'
+
+24-08-2025T14:54:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/LOGIN_PAGE/android.widget.EditTextEmail"), RANDOM_EMAIL_REGISTER, 0): Text 'user1756022033985450@qamail.com' has been set to element 'Object Repository/LOGIN_PAGE/android.widget.EditTextEmail'
+
+24-08-2025T14:54:54 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:55 - [MESSAGE][PASSED] - Text 'user1756022033985450@qamail.com' has been set to element 'Object Repository/LOGIN_PAGE/android.widget.EditTextEmail'
+
+24-08-2025T14:54:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/LOGIN_PAGE/android.widget.EditTextPassword"), "Indones1@", 0): Text 'Indones1@' has been set to element 'Object Repository/LOGIN_PAGE/android.widget.EditTextPassword'
+
+24-08-2025T14:54:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:54:57 - [MESSAGE][PASSED] - Text 'Indones1@' has been set to element 'Object Repository/LOGIN_PAGE/android.widget.EditTextPassword'
+
+24-08-2025T14:54:57 - [TEST_STEP][PASSED] - tap(findTestObject("Object Repository/LOGIN_PAGE/android.view.ViewButtonMasuk"), 0): Tapped on element 'Object Repository/LOGIN_PAGE/android.view.ViewButtonMasuk'
+
+24-08-2025T14:54:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+24-08-2025T14:55:01 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/LOGIN_PAGE/android.view.ViewButtonMasuk']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[24-08-2025T14:53:53 - [TEST_SUITE][PASSED] - E2E: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

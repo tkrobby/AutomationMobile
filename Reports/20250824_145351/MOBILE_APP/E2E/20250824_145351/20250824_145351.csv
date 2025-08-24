@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+E2E,,,,24-08-2025 14:53:53,24-08-2025 14:55:03,1m - 10.067s,PASSED
+,,,,,,,
+Test Cases/MOBILE_APP/REGISTER,,,,24-08-2025 14:53:53,24-08-2025 14:54:28,34.577s,PASSED
+PHONE_NUMBER = utils.generator.generatePhoneNumber(),,,,24-08-2025 14:53:53,24-08-2025 14:53:53,0.016s,PASSED
+"RANDOM_EMAIL = utils.generator.generateEmail(""qamail.com"")",,,,24-08-2025 14:53:53,24-08-2025 14:53:54,0.030s,PASSED
+"logInfo(""Generated email: "" + RANDOM_EMAIL)",,,,24-08-2025 14:53:54,24-08-2025 14:53:54,0.005s,PASSED
+RANDOM_EMAIL_REGISTER = RANDOM_EMAIL,,,,24-08-2025 14:53:54,24-08-2025 14:53:54,0.028s,PASSED
+ANDROID_APP = getProjectDir() + ANDROID_APK,,,,24-08-2025 14:53:54,24-08-2025 14:53:54,0.002s,PASSED
+"startApplication(ANDROID_APP, true)",,,,24-08-2025 14:53:54,24-08-2025 14:54:06,12.901s,PASSED
+delay(2),,,,24-08-2025 14:54:06,24-08-2025 14:54:09,2.055s,PASSED
+"btnSelanjutnya = findTestObject(""Object Repository/ONBOARDING/android.widget.Button"")",,,,24-08-2025 14:54:09,24-08-2025 14:54:09,0.090s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,24-08-2025 14:54:09,24-08-2025 14:54:14,5.826s,PASSED
+"tap(findTestObject(""Object Repository/ONBOARDING/BUTTON_MASUK""), 0)",,,,24-08-2025 14:54:14,24-08-2025 14:54:18,3.166s,PASSED
+"tap(findTestObject(""Object Repository/HOMEPAGE/android.widget.ImageViewProfile""), 0)",,,,24-08-2025 14:54:18,24-08-2025 14:54:19,1.032s,PASSED
+"tap(findTestObject(""Object Repository/ONBOARDING/LINK_DAFTAR""), 0)",,,,24-08-2025 14:54:19,24-08-2025 14:54:19,0.133s,PASSED
+"setText(findTestObject(""Object Repository/REGISTER_PAGE/android.widget.EditTextEmail""), RANDOM_EMAIL, 0)",,,,24-08-2025 14:54:19,24-08-2025 14:54:21,2.571s,PASSED
+"setText(findTestObject(""Object Repository/REGISTER_PAGE/android.widget.EditTextNamaKTP""), generator.getRandomName(), 0)",,,,24-08-2025 14:54:21,24-08-2025 14:54:23,1.468s,PASSED
+"setText(findTestObject(""Object Repository/REGISTER_PAGE/android.widget.EditTextNoHp""), PHONE_NUMBER, 0)",,,,24-08-2025 14:54:23,24-08-2025 14:54:24,0.742s,PASSED
+"setText(findTestObject(""Object Repository/REGISTER_PAGE/android.widget.EditTextCreataPassword""), ""Indones1@"", 0)",,,,24-08-2025 14:54:24,24-08-2025 14:54:25,1.446s,PASSED
+"setText(findTestObject(""Object Repository/REGISTER_PAGE/android.widget.EditTextUlangiPassword""), ""Indones1@"", 0)",,,,24-08-2025 14:54:25,24-08-2025 14:54:26,1.328s,PASSED
+"tap(findTestObject(""Object Repository/REGISTER_PAGE/android.view.ViewButtonDaftar""), 0)",,,,24-08-2025 14:54:26,24-08-2025 14:54:28,1.505s,PASSED
+,,,,,,,
+Test Cases/MOBILE_APP/LOGIN,,,,24-08-2025 14:54:28,24-08-2025 14:55:01,32.834s,PASSED
+ANDROID_APP = getProjectDir() + ANDROID_APK,,,,24-08-2025 14:54:28,24-08-2025 14:54:28,0.002s,PASSED
+"startApplication(ANDROID_APP, true)",,,,24-08-2025 14:54:28,24-08-2025 14:54:41,13.249s,PASSED
+delay(2),,,,24-08-2025 14:54:41,24-08-2025 14:54:43,2.043s,PASSED
+"btnSelanjutnya = findTestObject(""Object Repository/ONBOARDING/android.widget.Button"")",,,,24-08-2025 14:54:43,24-08-2025 14:54:43,0.022s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,24-08-2025 14:54:43,24-08-2025 14:54:50,6.293s,PASSED
+"tap(findTestObject(""Object Repository/ONBOARDING/BUTTON_MASUK""), 0)",,,,24-08-2025 14:54:50,24-08-2025 14:54:53,3.171s,PASSED
+"tap(findTestObject(""Object Repository/HOMEPAGE/android.widget.ImageViewProfile""), 0)",,,,24-08-2025 14:54:53,24-08-2025 14:54:54,1.064s,PASSED
+"setText(findTestObject(""Object Repository/LOGIN_PAGE/android.widget.EditTextEmail""), RANDOM_EMAIL_REGISTER, 0)",,,,24-08-2025 14:54:54,24-08-2025 14:54:55,1.663s,PASSED
+"setText(findTestObject(""Object Repository/LOGIN_PAGE/android.widget.EditTextPassword""), ""Indones1@"", 0)",,,,24-08-2025 14:54:55,24-08-2025 14:54:57,1.481s,PASSED
+"tap(findTestObject(""Object Repository/LOGIN_PAGE/android.view.ViewButtonMasuk""), 0)",,,,24-08-2025 14:54:57,24-08-2025 14:55:01,3.701s,PASSED

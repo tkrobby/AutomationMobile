@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CREATE_PENGAJUAN_FIDUCIA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e25c2769-b667-405d-9577-ca5b8adda5c8</testCaseGuid>
+</TestCaseEntity>
